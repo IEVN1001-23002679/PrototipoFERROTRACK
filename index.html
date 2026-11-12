@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERROTRACK | Gestión de Incidentes</title>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="bi bi-train-front"></i>
+                </div>
+                <div>
+                    <h2>FERROTRACK</h2>
+                    <span>Gestión ferroviaria</span>
+                </div>
+            </div>
+
+            <div class="menu-title">MENÚ PRINCIPAL</div>
+
+            <nav class="menu">
+
+                <button class="menu-item active" data-page="dashboard">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <span>Panel principal</span>
+                </button>
+
+                <button class="menu-item" data-page="registro">
+                    <i class="bi bi-file-earmark-plus"></i>
+                    <span>Registrar incidente</span>
+                </button>
+
+                <button class="menu-item" data-page="acciones">
+                    <i class="bi bi-clipboard-check"></i>
+                    <span>Seguimiento de acciones</span>
+                </button>
+
+                <button class="menu-item" data-page="historial">
+                    <i class="bi bi-clock-history"></i>
+                    <span>Historial y reportes</span>
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                    <strong>Sistema de demostración</strong>
+                    <span>FERROTRACK v1.0</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+                    <span class="system-label">SISTEMA DE CONTROL FERROVIARIO</span>
+                    <h3>Administración de incidentes</h3>
+                </div>
+
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Usuario de demostración</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- AQUÍ SE MOSTRARÁ CADA MÓDULO -->
+            <section id="page-content" class="page-content">
+            </section>
+
+            <footer class="footer">
+                FERROTRACK © 2026 | Prototipo académico
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- MENSAJES DE CONFIRMACIÓN -->
+    <div id="toast" class="toast"></div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
